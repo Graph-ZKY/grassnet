@@ -124,6 +124,7 @@ def train(args):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Optimized SSM")
     register_data_args(parser)
+    parser.add_argument("--dataset", type=str, default='cora')
     parser.add_argument("--dropout", type=float, default=0.5)
     parser.add_argument("--gpu", type=int, default=0)
     parser.add_argument("--lr", type=float, default=1e-1)
@@ -138,8 +139,6 @@ if __name__ == '__main__':
     parser.add_argument("--self-loop", action="store_true")
     parser.set_defaults(self_loop=False)
     args = parser.parse_args()
-    args.dataset = 'cora'
 
-    test_acc = []
     seed_everything(args.seed)
     acc = train(args)
