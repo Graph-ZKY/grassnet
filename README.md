@@ -10,9 +10,9 @@ Ensure the following packages are installed:
 
 - Python ≥ 3.7
 - PyTorch ≥ 1.10
-- DGL
 - tqdm
 - networkx
+- [DGL](https://github.com/dmlc/dgl)
 - [mamba-ssm](https://github.com/state-spaces/mamba)
 
 ```bash
