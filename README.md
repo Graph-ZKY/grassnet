@@ -26,7 +26,6 @@ pip install mamba-ssm
 ## 📂 Project Structure
 ```bash
 grassnet/
-├── impl/             # Hyperparameter searching
 ├── model/            # Model definitions including GrassNet & Mamba variants
 ├── utils/            # Utility scripts (e.g., metrics, data loading)
 ├── main.py           # Main training/testing pipeline
