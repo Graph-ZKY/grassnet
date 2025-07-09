@@ -123,7 +123,7 @@ def train(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Optimized SSM")
-    register_data_args(parser)
+    # register_data_args(parser)
     parser.add_argument("--dataset", type=str, default='cora')
     parser.add_argument("--dropout", type=float, default=0.5)
     parser.add_argument("--gpu", type=int, default=0)
